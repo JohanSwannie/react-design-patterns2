@@ -1,5 +1,5 @@
 import React from "react";
-import SingleMovie from "../../frontend/src/components/SingleMovie";
+import SingleMovie from "../components/SingleMovie";
 import { gql, useQuery } from "@apollo/client";
 
 const listAllMovies = gql`
