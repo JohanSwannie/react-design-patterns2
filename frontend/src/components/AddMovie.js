@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { gql, useMutation } from "@apollo/client";
-import { useEffect } from "react";
 
 const listAllMovies = gql`
   query {
