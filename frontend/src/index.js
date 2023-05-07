@@ -10,6 +10,7 @@ const apolloClient = new ApolloClient({
 });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <ApolloProvider client={apolloClient}>
     <React.StrictMode>
@@ -19,5 +20,3 @@ root.render(
     </React.StrictMode>
   </ApolloProvider>
 );
-
-// * mongodb+srv://jswannieman:<password>@jswan-reactgraphqlapp1.yqv2bea.mongodb.net/
