@@ -7,10 +7,13 @@ const movieSchema = require("./schema/schema");
 const cors = require("cors");
 
 mongoose
-  .connect(process.env.MONGODBURL, {
-    useNewURLParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(
+    "mongodb+srv://jswannieman:<password>@jswan-reactgraphqlapp1.yqv2bea.mongodb.net/",
+    {
+      useNewURLParser: true,
+      useUnifiedTopology: true,
+    }
+  )
   .then(() => {
     console.log("MongoDB connected!");
   })
